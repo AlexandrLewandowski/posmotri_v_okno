@@ -17,6 +17,7 @@ html {
   font-size: 18px;
   background-color: #1b1919;
   padding: 133px 30px;
+  max-height: 800px;
 }
 h1,
 h2,
@@ -35,6 +36,13 @@ fieldset {
 ul,
 ol {
   list-style: none;
+}
+
+a,
+a:hover,
+a:visited,
+a:active {
+  text-decoration: none;
 }
 
 .content {
@@ -61,10 +69,8 @@ ol {
 .content__list {
 }
 
-.search-form {
-  display: flex;
-  justify-content: flex-start;
-  gap: 30px;
+span.visually-hidden {
+  display: none;
 }
 
 .content__video-card {
@@ -84,9 +90,25 @@ ol {
   padding-block-end: 26px;
 }
 
+.content__list {
+  display: grid;
+  gap: 30px;
+}
+
 .content__list-item {
   max-width: 394px;
   max-height: 107px;
+}
+
+.search-form {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 16px;
+}
+
+.search-form__fieldset {
+  border: none;
 }
 
 .search-form__fieldset-title {
@@ -96,6 +118,7 @@ ol {
   font-size: 18px;
   line-height: 100%;
   letter-spacing: 0%;
+  margin-bottom: 5px;
 }
 
 .content__video-card-description {
@@ -133,6 +156,7 @@ p.content__video-card-description {
 .content__video-card-thumbnail {
   width: 194px;
   height: 103px;
+  gap: 30px;
 }
 
 .button {
@@ -146,7 +170,7 @@ p.content__video-card-description {
   line-height: 100%;
   letter-spacing: 0%;
   text-align: center;
-  border: none;
+  border: 1px solid #fff;
 }
 
 .more-button {
