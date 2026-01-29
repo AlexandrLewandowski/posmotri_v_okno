@@ -11,13 +11,13 @@ html {
 .page {
   inline-size: 1200px;
   block-size: 100%;
-  margin: auto;
+  margin: 0 auto;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  padding: 133px 30px;
 }
-
 h1,
 h2,
 h3,
@@ -35,4 +35,120 @@ fieldset {
 ul,
 ol {
   list-style: none;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  column-gap: 30px;
+}
+
+.result {
+  padding-top: 78px;
+}
+
+.result__video {
+  width: 711px;
+  height: 386px;
+}
+
+.content__details {
+  width: 100%;
+  max-height: 534px;
+  overflow: scroll;
+}
+
+.content__list {
+}
+
+.search-form {
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+.content__video-card {
+  display: flex;
+  max-height: 103px;
+  justify-content: space-between;
+}
+
+.title {
+  font-family: Oswald;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 75px;
+  line-height: 94%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  padding-block-end: 26px;
+}
+
+.content__list-item {
+  max-width: 394px;
+  max-height: 107px;
+}
+
+.search-form__fieldset-title {
+  font-family: Fira Sans Condensed;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.content__video-card-description {
+  font-family: Fira Sans Condensed;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 18px;
+  line-height: 16.2px;
+  letter-spacing: 0%;
+}
+
+p.content__video-card-description {
+  text-transform: capitalize;
+  padding-top: 6px;
+}
+
+.content__video-card-description-container {
+  max-width: 200px;
+  max-height: 101px;
+  color: #ffffff;
+}
+
+.content__video-card-title {
+  font-family: Oswald;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 30px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  max-width: 200px;
+  max-height: 30px;
+}
+
+.content__video-card-thumbnail {
+  width: 194px;
+  height: 103px;
+}
+
+.button {
+  height: 34px;
+  background-color: #000000;
+  color: #fff;
+  font-family: Fira Sans Condensed;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  border: none;
+}
+
+.more-button {
+  width: 100%;
 }
