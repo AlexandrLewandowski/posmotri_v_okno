@@ -55,15 +55,19 @@ a:active {
   padding-top: 78px;
 }
 
-.result__video {
+.result__video-container {
   width: 711px;
   height: 386px;
+}
+
+.result__video {
+  width: 100%;
 }
 
 .content__details {
   width: 100%;
   max-height: 534px;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 .content__list {
@@ -175,4 +179,25 @@ p.content__video-card-description {
 
 .more-button {
   width: 100%;
+  padding: 0;
 }
+
+.search-form__submit-button {
+  width: 194px;
+  height: 34px;
+  padding: 0;
+  margin-top: auto;
+}
+
+.content__accent::before {
+  content: "по-";
+  color: #545050;
+}
+
+.content__accent {
+  color: transparent; /* Скрываем оригинальный текст */
+  text-shadow: 0.05em 0 currentColor; /* Или используйте text-indent для сдвига */
+  text-indent: 2ch;
+}
+
+.search-form__label
