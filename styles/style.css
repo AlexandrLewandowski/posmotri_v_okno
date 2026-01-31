@@ -104,6 +104,10 @@ span.visually-hidden {
   max-height: 107px;
 }
 
+.content__list-item:active {
+  background-color: #545050;
+}
+
 .search-form {
   display: flex;
   justify-content: space-between;
@@ -189,15 +193,64 @@ p.content__video-card-description {
   margin-top: auto;
 }
 
+.button:active {
+  background-color: #545050;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
 .content__accent::before {
-  content: "по-";
+  content: "по";
   color: #545050;
 }
 
+.content__accent::before::after {
+  content: "-";
+  color: #545050;
+}
 .content__accent {
-  color: transparent; /* Скрываем оригинальный текст */
-  text-shadow: 0.05em 0 currentColor; /* Или используйте text-indent для сдвига */
+  color: transparent;
   text-indent: 2ch;
 }
 
-.search-form__label
+.search-form__label:hover {
+  cursor: pointer;
+}
+
+/* .search-form__label:has(.search-form__checkbox):focus {
+  outline: none;
+}
+
+.search-form__label:has(.search-form__checkbox):focus-visible {
+  outline: none;
+  border: 1px solid #fff;
+} */
+
+.search-form__label:focus-within > *:focus-visible {
+  outline: 1px solid rgb(0, 0, 0);
+}
+
+.search-form__label:focus-within {
+  border: 1px solid #fff;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  width: 19px;
+  height: 19px;
+  border: 1px solid #fff;
+  background: inherit;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:active {
+  background-color: #fff;
+  border: 2px solid #000;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #fff;
+  background-size: 14px;
+}
